@@ -1,0 +1,818 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/Montserrat-Regular.woff') format('woff'), 
+  url('../fonts/Montserrat-Regular.ttf')  format('truetype'), 
+  url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/Roboto-Regular.woff') format('woff'),
+  url('../fonts/Roboto-Regular.ttf')  format('truetype'),
+  url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}   
+   
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/Roboto-Light.woff') format('woff'), 
+  url('../fonts/Roboto-Light.ttf')  format('truetype'),
+  url('../fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}   
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/Roboto-Regular.woff') format('woff'),
+  url('../fonts/Roboto-Regular.ttf')  format('truetype'),
+  url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}   
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/Roboto-Medium.woff') format('woff'), 
+  url('../fonts/Roboto-Medium.ttf')  format('truetype'),
+  url('../fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}  
+  
+  
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    margin: 30px 0;
+    background: transparent;
+	border:0px solid;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 18px;
+	font-family: 'Montserrat-Regular';
+} 
+.navbar-default .navbar-nav>li>a:hover {
+	color:#74B249;
+}  
+   
+.headersection{
+	background:url(../img/banner.jpg)no-repeat;
+}
+.mainheader{
+	margin:200px 0;
+	color:#fff;
+}
+.headertext{}
+.headertext h2{
+	font-size: 38px;
+    font-weight: bold;
+	margin:0;
+	font-family: 'Roboto-Regular';
+}
+.headertext p{
+	font-family: 'Roboto-Regular';
+    font-size: 16px;
+    margin-bottom: 45px;
+    margin-top: 20px;
+}
+.headertext a{
+	font-family: 'Montserrat-Regular';
+    background: #74B249;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 45px;
+    color: #fff;
+	    border-radius: 7px;
+}
+.headertext a:hover{
+	text-decoration:none;
+}
+
+
+
+.featuressection{}
+.mainfeatures{
+	margin-top:100px;
+	margin-bottom:50px;
+}
+.featurestop{}
+.featurestop h2{
+	color: #285F5C;
+    font-size: 32px;
+    font-weight: bold;
+	margin:0;
+	font-family: 'Roboto-Light';
+}
+.featurestop p{
+	font-family: 'Roboto-Regular';
+	color: #86A6A3;
+    font-size: 15px;
+	margin-bottom:75px;
+	margin-top:45px;
+}
+.featuremiddle{}
+
+.featuremiddleinfo{
+	position:relative;
+}
+.featuremiddleinfo span{
+	    position: absolute;
+    height: 90px;
+    border-left: 2px solid #F2F2F2;
+    top: 278px;
+    left: 174px;
+}
+.featuremiddleinfo i{
+	    color: #AED495;
+    font-size: 100px;
+}
+.featuremiddleinfo h2{
+	color: #285F5C;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 25px 0;
+	font-family: 'Roboto-Regular';
+}
+.featuremiddleinfo p{
+	color: #99B3B1;
+    font-size: 14px;
+    margin: 0;
+	font-family: 'Roboto-Regular';
+}
+.featurebottom{
+	margin-top:190px;
+	position:relative;
+}
+.featurebottom span{
+	    width: 90px;
+    height: 2px;
+    position: absolute;
+    border-top: 2px solid #F2F2F2;
+    top: -60px;
+    left: 518px;
+}
+.feicon{}
+.feicon i{
+	    color: #B3D69B;
+    font-size: 50px;
+}
+.hed{}
+.hed h3{
+	    color: #285F5C;
+    font-size: 16px;
+    font-weight: bold;
+	font-family: 'Roboto-Regular';
+}
+.fis{
+	margin-top: 20px;
+	margin-bottom:50px;
+}
+.fis p{
+	color: #86A6A3;
+    font-size: 14px;
+	font-family: 'Roboto-Regular';
+	margin-right: 30px;
+}
+.templatesection{
+	background:#EEF1EC;
+}
+.maintemplate{
+	margin-top:100px;
+}
+.templatop{}
+.templatop h2{
+	color: #285F5C;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+	font-family: 'Roboto-Light';
+}
+.templatop p{
+	    color: #86A6A3;
+    font-size: 15px;
+    font-family: 'Roboto-Regular';
+    margin-bottom: 25px;
+    margin-top: 40px;
+}
+.templatebottom{}
+.mobileimage{}
+.mobileimage img{}
+.templaterighttext{
+	margin-top:130px;
+}
+.templaterighttext h2{
+	color: #6D8E89;
+    font-size: 32px;
+    font-weight: bold;
+	font-family: 'Roboto-Light';
+	margin-bottom:25px;
+	margin-top:0;
+}
+.templaterighttext p{
+	    color: #8FACA8;
+    font-size: 14px;
+	font-family: 'Roboto-Regular';
+	margin-bottom:17px;
+}
+.templaterighttext i{
+	margin-right:15px;
+	font-size: 20px;
+}
+
+
+.photosection{}
+.mainphotosec{
+	margin:135px 0;
+}
+.phototext{
+	padding-top:50px;
+}
+.phototext h3{
+	color: #86A6A3;
+    font-size: 22px;
+	font-family: 'Roboto-Light';
+}
+.phototext p{
+	color: #74B249;
+    font-size: 14px;
+	font-family: 'Roboto-Regular';
+}
+.phototext h4{
+	font-family: 'Roboto-Regular';
+	color: #90ADAA;
+    font-size: 15px;
+    font-weight: bold;
+}
+.photoimage{}
+.photoimage img{
+	height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+.detailssection{
+	background:#EEF1EB;
+}
+.maindetails{}
+.detailstext{
+	margin: 170px 0;
+}
+.detailstext h2{
+	color: #285F5C;
+    font-size: 32px;
+	font-weight:bold;
+	font-family: 'Roboto-Light';
+}
+.detailstext p{
+	color: #86A6A3;
+    font-size: 14px;
+	font-family: 'Roboto-Regular';
+	margin-top:20px;
+}
+.mapimage{
+	margin:60px 0;
+}
+
+.mapimage img{
+	max-width:100%;
+}
+.pricingsection{}
+.mainpricing{
+	margin:100px 0;
+}
+.pricingtop{}
+.pricingtoptext{}
+.pricingtoptext h2{
+	    color: #285F5C;
+    font-size: 32px;
+    margin: 0;
+	font-weight:bold;
+	font-family: 'Roboto-Light';
+}
+.pricingtoptext p{
+	margin:40px 0;
+	margin: 40px 0;
+    color: #86A6A3;
+    font-size: 15px;
+	font-family: 'Roboto-Regular';
+}
+.pricingtopmiddle{
+	    margin-bottom: 80px;
+}
+.pricinginfo{
+	        border: 2px solid #C2D2D1;
+    padding-bottom: 40px;
+}
+.pricinginfo h3{
+	color: #74B249;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 30px;
+	font-family: 'Roboto-Medium';
+}
+.pricinginfo h1{
+	color: #285F5C;
+    font-size: 65px;
+    margin-top: 0;
+	margin-bottom:10px;
+	font-family: 'Montserrat-Regular';
+}
+.month{
+	margin-bottom:30px;
+}
+.month span{
+	color: #285F5C;
+    font-size: 14px;
+   
+}
+.pricinginfo p{
+	font-size: 14px;
+    color: #90ADAA;
+	font-family: 'Roboto-Regular';
+}
+.linka{
+	padding-top:30px;
+}
+.linka a{
+	font-size: 13px;
+    font-weight: bold;
+    padding: 13px 20px;
+    background: #86A6A3;
+    color: #fff;
+    text-transform: uppercase;
+	
+}
+.linka a:hover{
+	text-decoration:none;
+	background:#74B249;
+}
+.pricingmiddle{}
+.pricingmiddletop{}
+.pricingmiddletop h2{
+	color: #517A78;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    margin-top: 0;
+	font-family:'Roboto-Light';
+}
+.pricingmiddleinformation{}
+.pricingmiddletext{}
+.pricingmiddletext i{
+	    margin-right: 15px;
+}
+.pricingmiddletext p{
+	    color: #86A6A3;
+    font-size: 18px;
+	font-family:'Roboto-Regular';
+}
+.pricingbottom{
+	margin-top:60px;
+}
+.pricingbottomtext{}
+.pricingbottomtext i{
+	color: #74B249;
+    font-size: 80px;
+}
+
+.pricingbottomtext h2{
+	    color: #74B249;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Roboto-Light';
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.pricingbottomtext p{
+	    color: #86A6A3;
+    font-size: 15px;
+    margin-bottom: 40px;
+	font-family:'Roboto-Regular';
+}
+.pricingbottomtext h3{
+	    color: #285F5C;
+    font-size: 18px;
+    margin: 0;
+	font-family:'Roboto-Regular';
+}
+
+
+.aboutsection{
+	background:url(../img/bottom.jpg)no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:center center;
+}
+.mainaboutsec{
+	margin:75px 0;
+}
+.aboutleft{}
+.aboutleft h2{
+	    color: #285F5C;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+	font-family: 'Roboto-Light';
+}
+.aboutleft p{
+	color: #8FACA8;
+    font-size: 15px;
+    margin-top: 10px;
+	font-family:'Roboto-Regular';
+	margin-bottom:0;
+}
+.aboutright{}
+.aboutright a{
+	    background: #74B249;
+    color: #fff;
+    font-size: 13px;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    border-radius: 5px;
+	font-family: 'Montserrat-Regular';
+}
+.aboutright a:hover{
+	text-decoration:none;
+}
+.contactsection{}
+.maincontact{
+	margin:100px 0; 
+}
+.contacttop{
+	padding-bottom:20px;
+}
+.contacttop h2{
+	    color: #3E6E6A;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+	font-family: 'Roboto-Medium';
+}
+.contacttop img{}
+.contactinfo{}
+.contactinfo p{
+	color: #86A6A3;
+    font-size: 16px;
+	font-family:'Roboto-Regular';
+}
+.conta{
+	margin-top:30px;
+}
+.conta a{
+	background: #EEF1EB;
+    padding: 12px 140px 12px 20px;
+    color: #86A6A3;
+    font-size: 13px;
+	font-family:'Roboto-Regular';
+}
+.conta a:hover{
+	text-decoration:none;
+}
+.footersection{}
+.mainfooter{
+	
+	border-top:2px solid #EEF1EB;
+}
+.footerleft{
+	float:left;
+	margin:25px 0;
+}
+.footerleft p{
+	color: #86A6A3;
+    font-size: 15px;
+    margin: 0;
+	font-family:'Roboto-Regular';
+}
+.footerright{
+	float:right;
+	margin:25px 0;
+}
+.footerright i{
+	color: #86A6A3;
+	font-size:20px;
+	margin-left:20px;
+}
+.{}
+.{}
+.scrolltoup {
+  
+  bottom: 0;
+  height: 59px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  width: 55px;
+  cursor:pointer;
+}
+.scrolltoup i {
+  color: #ccc;
+  font-size: 50px;
+  padding-top: 5px;
+}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
